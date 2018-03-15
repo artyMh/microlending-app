@@ -24,7 +24,7 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        AppService.registerApp();a
+        AppService.registerApp();
         if (AppService.isAppCountExceeded()) {
             console.log(`Disabling app due max app instances exceeded(${Config.MAX_APP_INSTANCES})`);
             this.disableApplication();
