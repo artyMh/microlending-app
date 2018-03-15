@@ -1,7 +1,7 @@
 import moment from 'moment';
 
-import Config from 'config';
-import { generateGuid } from 'helpers';
+import Config from '../config';
+import { generateGuid } from '../helpers';
 
 export default class LoanService {
 
@@ -9,7 +9,7 @@ export default class LoanService {
         let amount = parseFloat(loanAmount);
         let returnAmount = amount;
         let ratePerDay = parseFloat((loanPercentRate / 100) * amount);
-        let returnDateDays = loanDate.diff(moment(), 'days') + 1;
+        let returnDateDays = moment(loanDate).diff(moment(), 'days') + 1;
 
         for(let i = 0; i <= returnDateDays; i++) {
             returnAmount += ratePerDay;

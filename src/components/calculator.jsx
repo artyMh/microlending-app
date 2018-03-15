@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
 
-import Config from 'config';
-import LoanService from 'services/loan';
+import Config from '../config';
+import LoanService from '../services/loan';
 
 export default class Calculator extends React.Component {
 
@@ -89,7 +89,7 @@ export default class Calculator extends React.Component {
             return;
         }
 
-        let createdLoan = LoanService.createLoan(inputLoanAmount, inputLoanDate);
+        let createdLoan = LoanService.createLoan(inputLoanAmount, moment(inputLoanDate).valueOf());
         loanActions.addLoan(createdLoan);
         this.setState({
             inputLoanAmount: '',
