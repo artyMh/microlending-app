@@ -1,0 +1,37 @@
+{
+    "plugins": [
+        "react"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "env": {
+        "es6": true,
+        "browser": true,
+        "jest": true
+    },
+    "extends": [
+        "eslint:recommended", 
+        "plugin:react/recommended"
+    ],
+    "rules": {
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-unused-vars": [
+            "warn",
+            { "args": "none" }
+        ],
+        "no-console": "off",
+        "no-cond-assign": "off",
+        "no-unreachable": "off",
+        "no-extra-boolean-cast": "off"
+    }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "micro-lending",
+  "version": "1.0.0",
+  "description": "Micro lending test app for 4Finance",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "test": "jest --verbose",
+    "lint": "eslint ./src"
+  },
+  "author": "Artjoms Mihailovs",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "moment": "^2.21.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-datepicker": "^1.2.2",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.1",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.10",
+    "enzyme": "^3.3.0",
+    "eslint": "^4.18.2",
+    "eslint-plugin-react": "^7.7.0",
+    "html-webpack-plugin": "^3.0.6",
+    "jest": "^22.4.2",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11"
+  }
+}
